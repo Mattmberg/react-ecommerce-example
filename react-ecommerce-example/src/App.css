@@ -1,0 +1,14 @@
+.App {
+    width: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 4px;
+    align-content: center;
+}
