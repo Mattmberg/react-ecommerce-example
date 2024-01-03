@@ -1,6 +1,8 @@
-
 import './App.css';
 import { useState, useEffect } from 'react';
+import { Header } from './components/Header';
+import { NavBar } from './components/NavBar';
+import { Footer } from './components/Footer';
 
 function App() {
   const [data, setData] = useState(null);
@@ -32,8 +34,8 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <Header/>
+      <NavBar/>
       <div className='container'>
         {data.products.map(product => {
           return (
@@ -45,6 +47,7 @@ function App() {
           )
         })}
       </div>
+      <Footer/>
     </div>
   );
 }
